@@ -1,0 +1,27 @@
+{
+  "name": "pg-geolocation",
+  "version": "0.0.1",
+  "description": "",
+  "cordova": {
+    "id": "pg-cordova-plugin-geolocation",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/duongduckien/pg-cordova-plugin-geolocation.git"
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-ios",
+    "cordova-android"
+  ],
+  "author": "Duong Kien",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/duongduckien/pg-cordova-plugin-geolocation/issues"
+  },
+  "homepage": "https://github.com/duongduckien/pg-cordova-plugin-geolocation#readme"
+}
