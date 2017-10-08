@@ -1,6 +1,6 @@
 {
   "name": "pg-geolocation",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "",
   "cordova": {
     "id": "pg-cordova-plugin-geolocation",
