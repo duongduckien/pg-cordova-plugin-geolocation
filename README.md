@@ -1,3 +1,3 @@
-# pg-cordova-plugin-geolocation
+# Cordova Plugin Geolocation
 
-## Use for ionic 2
+Get current location in android & ios mobile app
