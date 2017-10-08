@@ -30,11 +30,7 @@ cordova plugin add cordova-plugin-add-swift-support --save
 ## For IOS
 
 * Open Xcode & choose team in signing
-<<<<<<< HEAD
 * Build Phases > Link Binary With Libraries
-=======
-* Build Phases > Link Binary With Libraries
->>>>>>> 4457318df7b3a3b98f170747457b6caad2ba04d7
 ==> Add CoreLocation.framework
 
 ##
@@ -111,11 +107,6 @@ Run app in Xcode
 <img src="https://i.imgur.com/tAtnF9I.png" width="300">
 
 <img src="https://i.imgur.com/heIXwE1.png" width="300">
-<<<<<<< HEAD
-
-=======
-
->>>>>>> 4457318df7b3a3b98f170747457b6caad2ba04d7
 
 ## For Android
 
