@@ -15,7 +15,7 @@
   <platform name="android">
     <config-file parent="/*" target="res/xml/config.xml">
       <feature name="geolocation">
-        <param name="android-package" value="pg-cordova-plugin-geolocation.geolocation" />
+        <param name="android-package" value="geolocation.geolocation" />
       </feature>
     </config-file>
     <config-file parent="/*" target="AndroidManifest.xml">
