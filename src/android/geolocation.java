@@ -187,8 +187,11 @@ public class geolocation extends CordovaPlugin implements LocationListener {
 
     @Override
     public void onStart() {
-      locationManager.requestLocationUpdates(provider, MIN_TIME_UPDATE, MIN_DISTANCE_UPDATE, this);
-      Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
+      if (!checkPermission()) {
+        cordova.requestPermissions(this, 0, permissions);
+      }
+      // locationManager.requestLocationUpdates(provider, MIN_TIME_UPDATE, MIN_DISTANCE_UPDATE, this);
+      // Location location = locationManager.getLastKnownLocation(LocationManager.GPS_PROVIDER);
     }
 
     @Override
@@ -197,7 +200,7 @@ public class geolocation extends CordovaPlugin implements LocationListener {
 
     @Override
     public void onResume(boolean multitasking) {
-      locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_UPDATE, MIN_DISTANCE_UPDATE, this);
+      // locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, MIN_TIME_UPDATE, MIN_DISTANCE_UPDATE, this);
     }
 
     @Override
