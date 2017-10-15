@@ -27,20 +27,6 @@ cordova plugin add pg-geolocation
 cordova plugin add cordova-plugin-add-swift-support --save
 ```
 
-## For IOS
-
-* Open Xcode & choose team in signing
-* Build Phases > Link Binary With Libraries
-==> Add CoreLocation.framework
-
-##
-<img src="https://i.imgur.com/0ZPS6gF.png" width="600">
-
-* Edit HelloWorld-Info.plist
-* Add privacy location permision
-##
-<img src="https://i.imgur.com/CcsV0Xn.png" width="600">
-
 ##
 * Change hello\www\js\index.js
 * Replace onDeviceReady function
@@ -97,6 +83,21 @@ onDeviceReady: function() {
     </div>
 </div>
 ```
+
+## For IOS
+
+* Open Xcode & choose team in signing
+* Build Phases > Link Binary With Libraries
+==> Add CoreLocation.framework
+
+##
+<img src="https://i.imgur.com/0ZPS6gF.png" width="600">
+
+* Edit HelloWorld-Info.plist
+* Add privacy location permision
+##
+<img src="https://i.imgur.com/CcsV0Xn.png" width="600">
+
 Build app
 ```
 cordova build ios
@@ -110,4 +111,22 @@ Run app in Xcode
 
 ## For Android
 
-...
+* Go to platforms/android/src/AndroidManifest.xml
+* Add permission
+```
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+```
+Build app 
+```
+cordova build android
+```
+
+Run app on device
+```
+cordova run android
+```
+##
+<img src="https://i.imgur.com/5ti2mNW.png" width="300">
+
+<img src="https://i.imgur.com/hD6Tpf0.png" width="300">
